@@ -39,16 +39,16 @@ with col1:
 
 with col2:
     work_type = st.selectbox(
-        "Work type",
+        ":material/work: Work type",
         ["Private", "Self-employed", "Govt_job", "children", "Never_worked"],
     )
-    residence_type = st.selectbox("Residence type", ["Urban", "Rural"])
+    residence_type = st.selectbox(":material/home: Residence type", ["Urban", "Rural"])
     avg_glucose_level = st.number_input(
-        "Average glucose level", min_value=0.0, max_value=500.0, value=100.0, step=0.01
+        ":material/bloodtype: Average glucose level", min_value=0.0, max_value=500.0, value=100.0, step=0.01
     )
-    bmi = st.number_input("BMI", min_value=0.0, max_value=100.0, value=25.0, step=0.1)
+    bmi = st.number_input(":material/monitor_weight: BMI", min_value=0.0, max_value=100.0, value=25.0, step=0.1)
     smoking_status = st.selectbox(
-        "Smoking status",
+        ":material/smoking_rooms: Smoking status",
         ["formerly smoked", "never smoked", "smokes", "Unknown"],
     )
 
