@@ -16,9 +16,9 @@ MODEL_FILES = {
 def load_model(model_name):
     return joblib.load(MODEL_FILES[model_name])
 
-st.title("🩺 Stroke Prediction Using Machine Learning")
-st.write(":material/stethoscope: Welcome to Group 6 Capstone Project.")
-st.caption("This is a decision-support demo developed as an academic project to demonstrate the application of machine learning in stroke risk prediction. It does not provide a medical diagnosis.")
+st.title(":material/stethoscope: Stroke Prediction Using Machine Learning")
+st.write("Welcome to Group 6 Capstone Project.")
+st.caption("🩺This is a decision-support demo developed as an academic project to demonstrate the application of machine learning in stroke risk prediction. It does not provide a medical diagnosis.")
 
 with st.sidebar:
     st.header("Model")
