@@ -33,8 +33,8 @@ col1, col2 = st.columns(2)
 with col1:
     gender = st.selectbox("👤Gender", ["Female", "Male", "Other"])
     age = st.number_input(":material/calendar_today: Age (years)", min_value=0.0, max_value=120.0, value=45.0, step=1.0)
-    hypertension = st.selectbox("Hypertension", ["No", "Yes"])
-    heart_disease = st.selectbox("Heart disease", ["No", "Yes"])
+    hypertension = st.selectbox(":material/monitor_heart: Hypertension", ["No", "Yes"])
+    heart_disease = st.selectbox(":material/cardiology: Heart disease", ["No", "Yes"])
     ever_married = st.selectbox("Ever married", ["No", "Yes"])
 
 with col2:
