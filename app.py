@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="Stroke Risk Prediction", page_icon="🩺", layout="centered")
+st.set_page_config(page_title="Stroke Prediction", page_icon="🩺", layout="centered")
 
 MODEL_FILES = {
     "Logistic Regression": "logistic_regression_pipeline.joblib",
@@ -17,7 +17,7 @@ def load_model(model_name):
     return joblib.load(MODEL_FILES[model_name])
 
 st.title("🩺 Stroke Prediction Using Machine Learning")
-st.caption("Decision-support demo. It does not provide a medical diagnosis.")
+st.caption("Decision-support demo. Developed as an academic project to demonstrate the application of machine learning in stroke risk prediction. It does not provide a medical diagnosis.")
 
 with st.sidebar:
     st.header("Model")
