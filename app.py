@@ -16,7 +16,7 @@ MODEL_FILES = {
 def load_model(model_name):
     return joblib.load(MODEL_FILES[model_name])
 
-st.title("🧠🩺 Stroke Prediction Using Machine Learning")
+st.title("🩺 Stroke Prediction Using Machine Learning")
 st.caption("This is a decision-support demo developed as an academic project to demonstrate the application of machine learning in stroke risk prediction. It does not provide a medical diagnosis.")
 
 with st.sidebar:
@@ -31,8 +31,8 @@ st.subheader("Patient details")
 col1, col2 = st.columns(2)
 
 with col1:
-    gender = st.selectbox("Gender", ["Female", "Male", "Other"])
-    age = st.number_input("Age (years)", min_value=0.0, max_value=120.0, value=45.0, step=1.0)
+    gender = st.selectbox("👤Gender", ["Female", "Male", "Other"])
+    age = st.number_input(":material/calendar_today:Age (years)", min_value=0.0, max_value=120.0, value=45.0, step=1.0)
     hypertension = st.selectbox("Hypertension", ["No", "Yes"])
     heart_disease = st.selectbox("Heart disease", ["No", "Yes"])
     ever_married = st.selectbox("Ever married", ["No", "Yes"])
